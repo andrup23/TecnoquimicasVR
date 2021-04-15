@@ -58,7 +58,7 @@ AFRAME.registerComponent('handle-events', {
       el2.addEventListener('click', function () {
         camara.setAttribute("position", {
           x: 0,
-          y: 0,
+          y: 1.6,
           z: 1.8,
 
         })
