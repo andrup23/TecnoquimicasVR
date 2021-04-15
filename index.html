@@ -142,8 +142,8 @@
     </a-entity>
     <a-entity gltf-model="#armario" scale=".001 .001 .001" position="1.721 0 -2.526" crossOrigin="anonymous"></a-entity>
 
-    <a-entity id="control" position="-1.368 1.6 4.444" rotation="0 -90 0">
-      <a-entity id="camera" camera look-controls>
+    <a-entity id="control" position="-1.368 0 4.444" rotation="0 -90 0">
+      <a-camera>
         <a-cursor raycaster="objects: .collidable; far:2.2" id="mouseCursor" position="0 0 -0.8" 
         animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1"
         animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: 1 1 1; to: 0.1 0.1 0.1"
@@ -154,7 +154,7 @@
 
         <a-entity id="paneltext" text="value: ; align: center; color: #000000; height: 1; width: 0.8"
           position="0 0.05 -0.8" visible="false"></a-entity>
-      </a-entity>
+      </a-camera>
       <!--Le paso a la camara el cursor-->
     </a-entity>
 

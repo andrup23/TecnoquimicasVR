@@ -40,7 +40,7 @@ AFRAME.registerComponent('handle-events', {
       el2.addEventListener('click', function () {// esta funcion va a ubicar la camara en uno de los dos cubos amarillos que hay en el escenario
         camara.setAttribute("position", {//para modificar el atributo position de camera
           x: el2.getAttribute("position").x,// extraigo la position x del cubo que estoy haciendo click y uso esa coordenada para teletransportarme
-          y: el2.getAttribute("position").y+1.6,// extraigo la position y del cubo que estoy haciendo click y uso esa coordenada para teletransportarme
+          y: el2.getAttribute("position").y,// extraigo la position y del cubo que estoy haciendo click y uso esa coordenada para teletransportarme
           z: el2.getAttribute("position").z,// extraigo la position z del cubo que estoy haciendo click y uso esa coordenada para teletransportarme
 
         })
@@ -58,7 +58,7 @@ AFRAME.registerComponent('handle-events', {
       el2.addEventListener('click', function () {
         camara.setAttribute("position", {
           x: 0,
-          y: 1.6,
+          y: 0,
           z: 1.8,
 
         })
